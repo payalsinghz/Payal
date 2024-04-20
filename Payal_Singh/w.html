@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="keyMessage">Press any keys!</p>
+<script>// Add a keydown event listener to the document:
+document.addEventListener("keydown", function(event) {
+// Code to run when a key is pressed down:
+document.getElementById("keyMessage").innerText = "Key pressed: " + event.key;
+});
+// Add a keyup event listener to the document:
+document.addEventListener("keyup", function(event) {
+// Code to run when a key is released:
+document.getElementById("keyMessage").textContent = "Key released!";
+});
+</script>
+</body>
+</html>
